@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<link>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Document</title>
+<link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css">
+</link>
+<link rel="stylesheet" href="./index.css">
+</link>
+</head>
+
+<body>
+
+    <div class="container">
+        <h1>Customer Details:</h1>
+        <form class="mt-5" id="customer-form">
+            <div class="fullname mb-4">
+                <label class="form-label label-input">Full Name <span class="clr-red">*</span></label>
+                <div class="d-flex justify-content-between">
+                    <div class="form-input input-group-lg d-flex flex-column">
+                        <input type="text" id="first-name" class="form-control" required />
+                        <span class="mt-2 text-secondary">First Name</span>
+                    </div>
+                    <div class="form-input input-group-lg d-flex flex-column">
+                        <input type="text" id="last-name" class="form-control" required />
+                        <span class="mt-2 text-secondary">Last Name</span>
+                    </div>
+                </div>
+            </div>
+            <div class="address">
+                <label class="form-label label-input">Address <span class="clr-red">*</span></label>
+                <div class="input-group-lg d-flex flex-column">
+                    <input type="text" id="street-add-1" class="form-control" required />
+                    <span class="mt-2 text-secondary">Street Address</span>
+                </div>
+                <div class="input-group-lg d-flex flex-column mt-3">
+                    <input type="text" id="street-add-2" class="form-control" required />
+                    <span class="mt-2 text-secondary">Street Address Line 2</span>
+                </div>
+                <div class="d-flex justify-content-between mt-3">
+                    <div class="input-group-lg d-flex flex-column form-input">
+                        <input type="text" id="city" class="form-control " required />
+                        <span class="mt-2 text-secondary">City</span>
+                    </div>
+                    <div class="input-group-lg d-flex flex-column form-input">
+                        <input type="text" id="state" class="form-control" required />
+                        <span class="mt-2 text-secondary">State/Province</span>
+                    </div>
+                </div>
+                <div class="input-group-lg mt-3 d-flex flex-column">
+                    <input type="text" id="post-code" class="form-control" required />
+                    <span class="mt-2 text-secondary">Postal / Zip Code</span>
+                </div>
+            </div>
+            <div class="d-flex justify-content-between">
+                <div class="phone-number input-group-lg mt-3 d-flex flex-column form-input">
+                    <label class="form-label label-input">Phone Number <span class="mt-2 clr-red">*</span></label>
+                    <input type="text" id="phone-number" class="form-control" placeholder="(000) 000-0000" required />
+                </div>
+                <div class="email mt-3 d-flex flex-column form-input">
+                    <label class="form-label label-input">E-mail</label>
+                    <div class="d-flex flex-column input-group-lg">
+                        <input type="email" id="email" class="form-control" placeholder="ex: email@yahoo.com" />
+                        <span class="mt-2">example@example.com</span>
+                    </div>
+                </div>
+            </div>
+            <div class="d-grid mt-5">
+                <button class="btn btn-secondary btn-lg">Submit</button>
+            </div>
+        </form>
+    </div>
+
+    <script src="./bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="./index.js"></script>
+</body>
+
+</html>
